@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ekle</title>
+</head>
+<body>
+    <form action="/Home/UrunEkle" method="post">
+        <div>
+            <label>Ürün ID</label>
+            <input type="text" name="urunID"/>
+        </div>
+        <div>
+            <label>Ürün Adı</label>
+            <input type="text" name="urunAdi"/>
+        </div>
+        <div>
+            <label>Ürün Fiyatı</label>
+            <input type="text" name="fiyat"/>
+        </div>
+        <div>
+            <label>Stok Miktarı</label>
+            <input type="text" name="stokMiktari"/>
+        </div>
+        <input type="submit" value="Kaydet" />
+    </form>
+</body>
+</html>

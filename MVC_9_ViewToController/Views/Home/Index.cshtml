@@ -1,0 +1,23 @@
+﻿@model List<MVC_9_ViewToController.Models.Urun>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <div>
+            <a href="/Home/Ekle">Yeni Ürün Ekle</a>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div>@item.urunAdi -- @item.fiyat -- @item.stokMiktari</div>
+        }
+    </div>
+</body>
+</html>
